@@ -1,15 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import CarsList from "@/components/CarList";
+import AddCarForm from "@/components/CarForm";
 
-export default function Home() {
+export default function AddCars() {
   return (
     <div className="container mx-auto px-4">
       <Card>
         <CardHeader>
-          <CardTitle>Car Inventory List</CardTitle>
+          <CardTitle>Add New Car</CardTitle>
         </CardHeader>
         <CardContent>
-          <CarsList />
+          <AddCarForm />
         </CardContent>
       </Card>
     </div>
