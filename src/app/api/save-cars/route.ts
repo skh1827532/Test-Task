@@ -1,8 +1,12 @@
 import { createClient } from "@supabase/supabase-js";
 import { NextRequest, NextResponse } from "next/server";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
+// const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+// const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
+
+const supabaseUrl="https://eqndrfsctprhxofcugee.supabase.co"
+const supabaseAnonKey="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im51YWJvcXFxY2Z1Ymxlc2x4Y2tkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjk4NDQyMTcsImV4cCI6MjA0NTQyMDIxN30.xmq8YX_Dg5xJgf-AhdhW9ejEmbmiNgxqV4j6FRg4YbY"
+const supabaseServiceRoleKey="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVxbmRyZnNjdHByaHhvZmN1Z2VlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNDEyOTc1NCwiZXhwIjoyMDQ5NzA1NzU0fQ.bhEK8HbVU9TSiCuj31QqhPIqBKsQouT5iM4TZvi8rb4"
 
 const supabase = createClient(supabaseUrl, supabaseServiceRoleKey);
 
